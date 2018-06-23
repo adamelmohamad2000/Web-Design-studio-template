@@ -1,0 +1,138 @@
+<html lang="en" dir="ltr">
+  <head>
+    <div id="overlay">
+    <div id="spinner-1">
+    </div>
+  </div>
+     
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Affordable web design">
+          <title>Web Dev</title>
+          <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/animate.css">
+             <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js></script>
+
+            </head>
+            <body onload="keepsNavclosed()">
+              <script>
+ var overlay = document.getElementById("overlay");
+ $( document ).ready(function() {
+    $("#overlay").delay(2600).fadeOut("slow");
+});
+
+   </script>
+              <div>
+
+              <header>
+                <div class="container">
+                  <div id="branding">
+                    <h1>
+                      <span class="highlight">Web</span> Dev
+                    </h1>
+                  </div>
+                  <nav class="navbar">
+                    <span class="open-slide">
+                      <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"></path>
+                          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"></path>
+                          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"></path>
+                        </svg>
+                      </a>
+                    </span>
+                    <ul class="navbar-nav">
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </nav>
+                  <div id="side-menu" class="side-nav" style="width: 300px;">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
+                    <a href="#"></a>
+                    <center>
+                      <a href="index.html">Home</a>
+                    </center>
+                    <a href="#"></a>
+                    <center>
+                      <a href="about.html">About</a>
+                    </center>
+                    <a href="#"></a>
+                    <center>
+                      <a href="services.html">Services</a>
+                    </center>
+                  </div>
+                </div>
+              </header>
+              <section id="showcase">
+                <div class="container">
+                  <h1>Affordable, Professional Web design</h1>
+                  <p>There has never been a better time to own a business and establish your identity online. We can help to empower your business by providing website optimisation and marketing to ensure you gain the edge over your competitors. As specialists in web development, we also have expertise in developing ecommerce websites, business software and mobile apps.</p>
+                </div>
+              </section>
+              <section id="newsletter">
+                <div class="container">
+                  <h1>Subscribe To Our Newsletter</h1>
+                  <form>
+                    <input type="email" placeholder="Enter Email...">
+                      <button type="submit" class="button_1">Subscribe</button>
+                    </form>
+                  </div>
+                </section>
+                <section id="boxes" class="wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                  <div class="container" id="object">
+                    <div class="box">
+                      <h3>HTML5 Markup</h3>
+                      <img src="img/html.png" style="height:200px;width:200px;">
+                        <p>Looking to build a new website or transform an existing one that isn’t performing? We create engaging websites that offer the very best in user experience and drive enquiries.</p>
+                      </div>
+                      <div class="box">
+                        <h3>CSS3 Styling</h3>
+                        <img src="img/css.png" style="height:200px;width:200px;">
+                          <p>Your site, your way. Craft a visually pleasing site that backs your business objectives and leverages your online presence. Give your visitors a seamless user experience that keeps them coming back time after time.</p>
+                        </div>
+                        <div class="box">
+                          <h3>Javascript</h3>
+                          <img src="img/js.png" style="height:200px;width:200px;">
+                            <p>We will add those stunning animations and features that'll give your website an edge over the others.</p>
+                          </div>
+                        </div>
+                        </div>
+                      </section>
+                      <footer id="footer">
+                        <p> Web Dev, Copyright © 2018</p>
+                      </footer>
+                      <script src="js/wow.min.js"></script>
+                      <script>
+              new WOW().init();
+              </script>
+                      <script>
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '300px';
+        }
+   </script>
+                      <script>
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0px';
+        }
+
+   </script>
+                      <script>
+
+    function keepsNavclosed(){
+           document.getElementById('side-menu').style.width = '0px';
+    }
+   </script>
+                      <script>
+   function fadeIn(){
+    $("#object1").fadeIn(4000);
+   }
+
+   </script>
+
+  
+                    </body>
+                  </html>

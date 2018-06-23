@@ -1,0 +1,103 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Affordable web design">
+          <title>About Us-Web Dev</title>
+          <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/animate.css">
+            </head>
+            <body>
+              <header>
+                <div class="container">
+                  <div id="branding">
+                    <h1>
+                      <span class="highlight">Web</span> Dev
+                    </h1>
+                  </div>
+                  <nav class="navbar">
+                    <span class="open-slide">
+                      <a href="#" onclick="openSlideMenu()">
+                        <svg width="30" height="30">
+                          <path d="M0,5 30,5" stroke="#fff" stroke-width="5"></path>
+                          <path d="M0,14 30,14" stroke="#fff" stroke-width="5"></path>
+                          <path d="M0,23 30,23" stroke="#fff" stroke-width="5"></path>
+                        </svg>
+                      </a>
+                    </span>
+                    <ul class="navbar-nav">
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </nav>
+                  <div id="side-menu" class="side-nav" style="width: 0px;">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">×</a>
+                    <a href="#"></a>
+                    <center>
+                      <a href="index.html">Home</a>
+                    </center>
+                    <a href="#"></a>
+                    <center>
+                      <a href="about.html">About</a>
+                    </center>
+                    <a href="#"></a>
+                    <center>
+                      <a href="services.html">Services</a>
+                    </center>
+                  </div>
+                </div>
+              </div>
+              <nav>
+                <ul>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </nav>
+            </header>
+            <section id="newsletter">
+              <div class="container">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                  <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                  </form>
+                </div>
+              </section>
+              <section id="main">
+                <div class="container">
+                  <article id="main-col" class="wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                    <h1 class="page-title">About Us
+               </h1>
+                    <p>
+                  At Web Dev, we have been building websites for more than 12+ years, and currently building more than 100 websites per month, every month, year after year. We often get asked why do so many businesses choose us to build their business website.
+               </p>
+                    <p>We are trusted to build a quality website and an affordable price and have done since our inception. We understand the importance of building a website in a quick turnaround, usually within 2-3 weeks for most customers.</p>
+                  </article>
+                  <aside id="sidebar" class="wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="dark">
+                      <h3>What We Do</h3>
+                      <p>It's simple! Our job is to ensure your business thrives online. By using SEO optimzation and creating stunning, pixel-perfect websites, we ensure people are attracted to doing business with you</p>
+                    </div>
+                  </aside>
+                </div>
+              </section>
+              <footer id="footer">
+                <p> Web Dev, Copyright © 2018</p>
+              </footer>
+              <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+              <script>
+        function openSlideMenu(){
+          document.getElementById('side-menu').style.width = '300px';
+        }
+   </script>
+              <script>
+        function closeSlideMenu(){
+          document.getElementById('side-menu').style.width = '0px';
+        }
+
+   </script>
+            </body>
+          </html>

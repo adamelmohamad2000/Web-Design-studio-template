@@ -1,0 +1,288 @@
+
+/*Fully developed, from start to finish, by Adam El Mohamad*/
+body{
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+line-height: 1.5;
+padding:0;
+margin:0;
+background-color: #f4f4f4;
+}
+
+/*spinner 1 */
+#spinner-1{
+	content:"";
+	box-sizing:border-box;
+	position:absolute;
+	top:50%;
+	left:50%;
+	height:60px;
+	width:60px;
+	margin-top:-30px;
+	margin-left:-30px;
+	border-radius:50%;
+	border:3px solid lightgray;
+	border-top-color:coral;
+	animation: spinner 0.7s linear infinite;
+}
+
+@keyframes spinner{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+#overlay{
+	height:100%;
+	width:100%;
+	background-color: #35424a;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index: 9999;
+}
+
+.container{
+	width:80%;
+	margin: auto;
+	overflow:hidden;
+}
+
+#object{
+  -vendor-animation-duration: 5s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite
+}
+
+.side-nav{
+background-color:#e8491d;
+height:100%;
+position:fixed;
+display:table;
+z-index: 100;
+top:0;
+right:0;
+width:0;
+overflow-x:hidden;
+opacity:1;
+}
+
+div#side-menu.side-nav{
+	display:table;
+	width:30%;
+}
+
+
+.open-slide{
+	float:right;
+}
+
+.side-nav a{
+	padding: 10px 10px;
+	text-decoration: none;
+	color: #ffffff;
+	transition:0.4s;
+	font-size:20px;
+}
+
+
+header{
+	background: #35424a;
+	color:#ffffff;
+	text-decoration: none;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 3px solid;
+}
+
+header a{
+color:#ffffff;
+text-decoration: none;
+text-transform: uppercase;
+font-size:16px;
+
+}
+
+header ul{
+	margin: 0;
+	padding: 0
+}
+
+header li{
+	float:left;
+	display: inline;
+	padding:0 20px 0 20px;
+}
+
+
+header #branding{
+float:left;
+
+}
+
+header #branding h1{
+margin: 0;
+
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+}
+
+header .highlight, header .current a{
+color:#e8491d;
+font-weight:bold;
+
+}
+
+header a:hover{
+color:#cccccc;
+font-weight: bold;
+
+}
+
+#showcase{
+	min-height: 400px;
+	background:url('../img/showcase.jpg') no-repeat 0 -400px;
+	color: white;
+	text-align: center;
+}
+
+#showcase h1{
+	margin-top:100px;
+	font-size:55px;
+	margin-bottom:10px;
+}
+
+#newsletter{
+	padding:15px;
+	color: #ffffff;
+	background-color:#35424a !important;
+}
+
+#newsletter h1{
+	float:left;
+}
+
+#newsletter form{
+	float:right;
+	margin-top:25px;
+}
+
+.button_1{
+height:30px;
+background:#e8491d;
+border:0;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+border-radius:9px;
+}
+
+.dark{
+	padding: 15px;
+	background: #35424a;
+	color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#boxes{
+margin-top:20px;
+
+}
+
+#boxes .box{
+  float:left;
+  width:30%;
+  padding:10px;
+  text-align:center;
+}
+
+#boxes .box img{
+width:90px;
+}
+
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+article#main-col{
+	float:left;
+	width:65%;
+}
+
+ul#services li{
+list-style: none;
+padding:20px;
+border: #cccccc solid 1px;
+margin-bottom:5px;
+background: #e6e6e6;
+
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+ width: 90%;
+ padding:5px;
+
+
+}
+
+aside#sidebar .quote #contact_button
+{
+    margin-top:10px;
+	border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #e8491d;
+    border-radius:9px;
+}
+
+#footer{
+	padding:20px;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #e8491d;
+	text-align: center;
+}
+
+/*Media Queries */
+@media(max-width: 768px){
+
+header #branding, header nav, 
+header nav li, #newsletter h1,
+#newsletter form, #boxes .box,
+article#main-col, aside#sidebar,
+.dark, .quote
+{
+	float:none;,
+	text-align:center;
+	width:100%;
+}
+header{
+
+	padding-bottom:20px;
+}
+#showcase h1{
+    font-size:30px;
+	margin-top:40px;
+}
+
+#newsletter button, input#contact_button{
+	display:block;
+	width: 100%;
+	background-color: #e8491d;
+}
+#newsletter form input[type="email"]{
+width:100%;
+margin-bottom:5px;
+}
+}
+
+
